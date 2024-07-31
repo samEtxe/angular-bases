@@ -3,10 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeroComponent } from './heroes/hero/hero.component';
-import { ListComponent } from './heroes/list/list.component';
-import { CounterModule } from './counter/counter.module';
-import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
+import { AddCharacterComponent } from './dbz/components/add-character/add-character.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +12,16 @@ import { HeroesModule } from './heroes/heroes.module';
   ],
   imports: [
     BrowserModule,
-    CounterModule,
-    HeroesModule,
+    DbzModule,
+
+
+],
+  providers: [
+
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+
+  ]
 })
 export class AppModule { }
